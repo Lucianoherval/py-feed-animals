@@ -12,7 +12,7 @@ class Animal:
         return estoque_comida
 
 
-class Cachorro(Animal):
+class Dog(Animal):
     def __init__(self, name: str) -> None:
         super().__init__(name, consumo_diario=0.5)
 
@@ -20,7 +20,7 @@ class Cachorro(Animal):
         print(f"{self.name} fez au au!")
 
 
-class Gato(Animal):
+class Cat(Animal):
     def __init__(self, name: str) -> None:
         super().__init__(name, consumo_diario=0.2)
 
