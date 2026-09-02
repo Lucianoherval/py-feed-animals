@@ -1,5 +1,5 @@
 class Animal:
-    def __init__(self, name: str, consumo_diario: float):
+    def __init__(self, name: str, consumo_diario: float) -> None:
         self.name = name
         self.consumo_diario = consumo_diario
 
@@ -11,16 +11,18 @@ class Animal:
             print(f"{self.name} não tem comida suficiente.")
         return estoque_comida
 
+
 class Cachorro(Animal):
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         super().__init__(name, consumo_diario=0.5)
 
-    def latir(self):
+    def latir(self) -> None:
         print(f"{self.name} fez au au!")
 
+
 class Gato(Animal):
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         super().__init__(name, consumo_diario=0.2)
 
-    def miar(self):
+    def miar(self) -> None:
         print(f"{self.name} fez miau!")
